@@ -1,4 +1,4 @@
-<img src="http://opendatadpc.maps.arcgis.com/sharing/rest/content/items/5c8ef7516b5b4bb19f61037b4cd69015/data" alt="COVID-19" data-canonical-src="http://opendatadpc.maps.arcgis.com/sharing/rest/content/items/5c8ef7516b5b4bb19f61037b4cd69015/data" width="400" />
+<img src="assets/img/dpc-logo-covid19.png" alt="COVID-19" data-canonical-src="assets/img/dpc-logo-covid19.png" width="400" />
 
 [Italiano](README.md) - [English](README_EN.md)<br><br>
 
@@ -7,11 +7,7 @@
 [![GitHub license](https://img.shields.io/badge/License-Creative%20Commons%20Attribution%204.0%20International-blue)](https://github.com/pcm-dpc/COVID-19/blob/master/LICENSE)
 [![GitHub commit](https://img.shields.io/github/last-commit/pcm-dpc/COVID-19)](https://github.com/pcm-dpc/COVID-19/commits/master)
 
-**Modifiche ai dataset**<br>
-**I dati caso da sospetto diagnostico e casi da screening non più erogati**<br>
-**Da mercoledì 09/12/2020 sarà aggiunto il campo "Ingressi in terapia intensiva" e "note test" e "note casi", maggiori informazioni disponibili nella [issue 980](https://github.com/pcm-dpc/COVID-19/issues/980)**<br><br>
-
-[Sito del Dipartimento della Protezione Civile - Emergenza Coronavirus: la risposta nazionale](http://www.protezionecivile.it/attivita-rischi/rischio-sanitario/emergenze/coronavirus)
+[Sito del Dipartimento della Protezione Civile - Emergenza Coronavirus: la risposta nazionale](https://emergenze.protezionecivile.gov.it/it/sanitarie/coronavirus)
 
 Il 31 gennaio 2020, il Consiglio dei Ministri dichiara lo stato di emergenza, per la durata di sei mesi, in conseguenza del rischio sanitario connesso all'infezione da Coronavirus.
 Al Capo del Dipartimento della Protezione Civile, Angelo Borrelli, è affidato il coordinamento degli interventi necessari a fronteggiare l'emergenza sul territorio nazionale.  
@@ -31,7 +27,7 @@ Per informare i cittadini e mettere a disposizione i dati raccolti, utili ai sol
 
 ## Avvisi
 
-[Avvisi sui dati andamento COVID-19 Italia](avvisi.md)<br>
+[Avvisi sui dati andamento COVID-19 Italia](note/dpc-covid19-ita-note.csv)<br>
 
 ## Struttura del repository
 ```
@@ -94,10 +90,17 @@ COVID-19/
 │   │   ├── dpc-covid19-ita-scheda-regioni-*.pdf
 ```
 
-## Aggiornamento dei dati
+## Aggiornamento e flusso dei dati
 
-- Dati andamento COVID-19 Italia: ogni giorno alle 18:00<br>
+- Dati andamento COVID-19 Italia: ogni giorno alle 18:00
 - Dati contratti DPC COVID-19 di fornitura: continua (ogni volta che vengono effettuate operazioni sui contratti)
+
+<img src="assets/img/dpc-covid19-flusso-dati-it.png" alt="Flusso dati COVID-19" data-canonical-src="assets/img/dpc-covid19-flusso-dati-it.png" width="100%" />
+
+- Regioni: entro le 16:30 compilano i dati su un applicativo dell’Istituto Superiore di Sanità (controllo dati applicativo - warning)
+- Ministero della Salute: entro le 17:30 verifica e invia i dati al DPC (controllo dati applicativo e visivo - certificazione dei dati)
+- Dipartimento della Protezione Civile: entro le 18:00 controllo della qualità dei dati, elaborazione dei dataset e pubblicazione su GitHub e Dashboard ArcGIS (controllo dati applicativo - analisi)
+- Società civile (Community): segnalazioni attraverso GitHub issue
 
 ## Formato dei dati
 

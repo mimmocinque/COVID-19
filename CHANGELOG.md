@@ -2,10 +2,269 @@
 
 Tutte le modifiche al progetto, nuove funzionalità e informazioni sono documentate in questo file
 
+## Prossimo aggiornamento entro giugno 2022
+
+- Revisione della documentazione e descrizione processamento dei dati a seguito della fine dello stato di emergenza e del conseguente subentro nella fase di  pubblicazione da parte del Ministero della Salute
+
 ## Prossimi aggiornamenti
 
+- Bonifica dati pregressi con codici NUTS
 - Note di analisi di data quality
-- Aggiornamento dati giorni precedenti in base alle note di ricalcoli da parte delle Regioni
+
+## Prossimo aggiornamento 2021-04-17
+
+- Revisione della documentazione e descrizione processamento dei dati
+
+## 2022-06-14
+
+- Modifica: aggiornati csv e json file delle metriche sulle visualizzazioni delle dashboard desktop e mobile.
+
+## 2022-03-28
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2022-03-21
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2022-03-14
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2022-03-07
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+- Modifica: aggiornati csv e json file delle metriche sulle visualizzazioni delle dashboard desktop e mobile.
+
+## 2022-02-28
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2022-02-21
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2022-02-14
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2022-02-07
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2022-01-31
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2022-01-24
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2022-01-17
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2022-01-10
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2022-01-03
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2021-12-27
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2021-12-20
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2021-12-13
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2021-12-06
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2021-11-30
+
+- Modifica: corretti shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2021-11-29
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2021-10-28
+
+- Modifica: aggiornati csv e json file delle metriche sulle visualizzazioni delle dashboard desktop e mobile
+
+## 2021-10-09
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2021-09-28
+
+- AVVISO: per un refuso la data dell'aggiornamento risulta 2021-09-21 anzichè 2021-09-28, i dati tuttavia corrispondono all'aggiornamento odierno.
+ 
+## 2021-09-27
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2021-09-13
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2021-08-30
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2021-07-07
+
+- Modifica: aggiornati csv e json file delle metriche sulle visualizzazioni delle dashboard desktop e mobile
+
+## 2021-06-28
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+
+## 2021-06-21
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2021-06-14
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2021-06-07
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2021-05-31
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2021-05-24
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2021-05-17
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata. Revisione e integrazione versionID=31 con nuovi records.
+
+## 2021-05-10
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+ 
+## 2021-05-03
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2021-04-26
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata. Revisione e armonizzazione dati (valori nel campo legLink, eliminata precedente versionID=21 perchè errata).
+
+## 2021-04-19
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2021-04-12
+
+- Modifica: aggiornati shape e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2021-04-07
+
+- Modifica: aggiornati shape (il file .shp è zippato) e geojson (zippato) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata.
+
+## 2021-04-06
+
+- Modifica: aggiornati shape (il file .shp è zippato) e geojson (zippato in due parti) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche), con relativi metadata. Domani ci sarà un nuovo aggiornamento per l'applicazione del DL 1 aprile 2021, n.44.
+
+## 2021-04-03
+
+- Modifica: aggiornati shape e geojson (in corso di aggiornamento) file generalizzati con le nuove misure di contenimento a livello nazionale (aree rosse), con relativi metadata.
+- 
+## 2021-03-29
+
+- Modifica: aggiornati shape e geojson (in corso di aggiornamento) file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche) con relativi metadata.
+
+## 2021-03-22
+
+- Modifica: aggiornati shape e geojson file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche) con relativi metadata.
+
+## 2021-03-15
+
+- Modifica: aggiornati shape e geojson file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche) con relativi metadata.
+
+## 2021-03-08
+
+- Modifica: aggiornati shape e geojson file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche) con relativi metadata.
+- 
+## 2021-03-07
+
+- Modifica: aggiornati csv e json file delle metriche sulle visualizzazioni delle dashboard desktop e mobile
+
+## 2021-03-01
+
+- Modifica: aggiornati shape e geojson file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni, gialle e bianche) con relativi metadata. Per le aree bianche, nell'attributo LegSpecRif è stato introdotto il nuovo valore "art.1 comma 11", sempre con riferimento alle disposizioni del DPCM 14 gennaio 2021.
+
+## 2021-02-21
+
+- Modifica: aggiornati shape e geojson file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni e gialle) con relativi metadata.
+
+## 2021-02-14
+
+- Modifica: aggiornati shape e geojson file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni e gialle) con relativi metadata.
+
+## 2021-02-11
+
+- Modifica: aggiornati shape e geojson file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni e gialle) con relativi metadata.
+
+## 2021-02-08
+
+- Modifica: aggiornati shape e geojson file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni e gialle) con relativi metadata.
+
+## 2021-02-01
+
+- Modifica: aggiornati shape e geojson file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni e gialle) con relativi metadata.
+
+## 2021-01-24
+
+- Modifica: aggiornati shape e geojson file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni e gialle) con relativi metadata.
+
+## 2021-01-18
+
+- Aggiunta informazioni "codice_nuts_1" e "codice_nuts_2" sul dataset regioni e "codice_nuts_1", "codice_nuts_2" e " codice_nuts_3" sul dataset province
+- Aggiunta informazioni "totale_positivi_test_molecolare", "totale_positivi_test_antigenico_rapido", "tamponi_test_molecolare" e "tamponi_test_antigenico_rapido" sui dataset regioni e andamento nazionale
+
+## 2021-01-17
+
+- Modifica: aggiornati shape e geojson file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni e gialle) con relativi metadata.
+
+## 2021-01-11
+
+- Modifica: aggiornati shape e geojson file generalizzati con le nuove misure di contenimento a livello regionale (aree rosse, arancioni e gialle) con relativi metadata.
+
+## 2021-01-07
+
+- Modifica: aggiornati shape e geojson file generalizzati con le nuove misure di contenimento a livello nazionale (aree rosse, arancioni e gialle) con relativi metadata.
+
+## 2020-12-29
+
+- Modifica: aggiunta anche una versione generalizzata (-g) del dataset relativo alle nuove aree con le misure di contenimento a livello nazionale (aree rosse, arancioni e gialle).
+
+## 2020-12-24
+
+- Modifica: aggiornato shape file con le nuove misure di contenimento a livello nazionale (aree rosse, arancioni e gialle) con relativi metadata.
+
+## 2020-12-20
+
+- Modifica: aggiornato shape file con le nuove misure di contenimento a livello nazionale (aree rosse, arancioni e gialle) con relativi metadata.
+
+## 2020-12-13
+
+- Modifica: aggiornato shape file con le nuove misure di contenimento a livello nazionale (aree rosse, arancioni e gialle) con relativi metadata.
 
 ## 2020-12-09
 - Aggiunta: "Ingressi in terapia intensiva"
