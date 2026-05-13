@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generatore Sottopancia Scorrevole</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #1a1a1a;
+      line-height: 1.4;
+    }
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .panel {
+      background: #fff;
+      border: 1px solid #d8e0f0;
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 4px 14px rgba(0, 20, 80, 0.06);
+    }
+    h1 { font-size: 1.5rem; margin-top: 0; }
+    h2 { font-size: 1.1rem; margin: 0 0 8px; }
+    label { display: block; font-weight: 600; margin-top: 10px; }
+    input, textarea, select, button {
+      width: 100%;
+      border: 1px solid #b7c4e2;
+      border-radius: 8px;
+      padding: 10px;
+      font-size: .95rem;
+      margin-top: 6px;
+    }
+    textarea { min-height: 88px; resize: vertical; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    button {
+      cursor: pointer;
+      background: #0b57d0;
+      color: #fff;
+      border: none;
+      font-weight: 700;
+      margin-top: 14px;
+    }
+    button:hover { background: #0844a3; }
+    .preview {
+      position: relative;
+      height: 210px;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #111;
+      margin-top: 10px;
+    }
+    .ticker {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+      border-top: 2px solid rgba(255,255,255,.2);
+    }
+    .ticker-track {
+      display: inline-block;
+      white-space: nowrap;
+      padding-left: 100%;
+      will-change: transform;
+      animation-name: scorrimento;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+    .ticker-text {
+      display: inline-block;
+      padding: 0 28px;
+      font-weight: 700;
+      letter-spacing: .4px;
+    }
+    @keyframes scorrimento {
+      from { transform: translateX(0); }
+      to { transform: translateX(-100%); }
+    }
+    .code {
+      margin-top: 12px;
+      background: #0e1220;
+      color: #d7e8ff;
+      border-radius: 10px;
+      padding: 12px;
+      font-family: Consolas, monospace;
+      white-space: pre-wrap;
+      font-size: .86rem;
+      min-height: 160px;
+      overflow: auto;
+    }
+    .small { font-size: .85rem; color: #48566e; }
+    @media (max-width: 900px) {
+      .container { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="panel">
+      <h1>Generatore sottopancia scorrevole</h1>
+      <p class="small">Configura il banner e copia il codice HTML/CSS da incollare nel tuo sito.</p>
+
+      <label for="testo">Testo da scorrere</label>
+      <textarea id="testo">ULTIM'ORA • Questo è un esempio di sottopancia scorrevole personalizzabile</textarea>
+
+      <div class="row">
+        <div>
+          <label for="bg">Colore sfondo</label>
+          <input type="color" id="bg" value="#cc0000" />
+        </div>
+        <div>
+          <label for="fg">Colore testo</label>
+          <input type="color" id="fg" value="#ffffff" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label for="size">Altezza barra (px)</label>
+          <input type="number" id="size" value="52" min="28" max="140" />
+        </div>
+        <div>
+          <label for="speed">Durata scorrimento (s)</label>
+          <input type="number" id="speed" value="14" min="4" max="80" />
+        </div>
+      </div>
+
+      <label for="weight">Peso font</label>
+      <select id="weight">
+        <option value="500">Medio</option>
+        <option value="700" selected>Grassetto</option>
+        <option value="800">Extra Bold</option>
+      </select>
+
+      <button id="genera">Aggiorna anteprima e codice</button>
+    </section>
+
+    <section class="panel">
+      <h2>Anteprima</h2>
+      <div class="preview" id="preview">
+        <div class="ticker" id="ticker">
+          <div class="ticker-track" id="track">
+            <span class="ticker-text" id="tickerText"></span>
+            <span class="ticker-text" id="tickerTextClone"></span>
+          </div>
+        </div>
+      </div>
+
+      <h2>Codice da incorporare</h2>
+      <div class="code" id="output"></div>
+    </section>
+  </div>
+
+  <script>
+    const ui = {
+      testo: document.getElementById('testo'),
+      bg: document.getElementById('bg'),
+      fg: document.getElementById('fg'),
+      size: document.getElementById('size'),
+      speed: document.getElementById('speed'),
+      weight: document.getElementById('weight'),
+      genera: document.getElementById('genera'),
+      ticker: document.getElementById('ticker'),
+      track: document.getElementById('track'),
+      text: document.getElementById('tickerText'),
+      textClone: document.getElementById('tickerTextClone'),
+      output: document.getElementById('output')
+    };
+
+    function escapeHtml(str) {
+      return str.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
+    }
+
+    function generaCodice({ testo, bg, fg, size, speed, weight }) {
+      return `<div class="sottopancia-wrap">
+  <div class="sottopancia-track">
+    <span>${escapeHtml(testo)}</span>
+    <span>${escapeHtml(testo)}</span>
+  </div>
+</div>
+
+<style>
+.sottopancia-wrap {
+  position: relative;
+  width: 100%;
+  height: ${size}px;
+  overflow: hidden;
+  background: ${bg};
+  color: ${fg};
+}
+.sottopancia-track {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: sottopancia-scroll ${speed}s linear infinite;
+  font-family: Arial, sans-serif;
+  font-weight: ${weight};
+  line-height: ${size}px;
+}
+.sottopancia-track span { display: inline-block; padding: 0 2rem; }
+@keyframes sottopancia-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+</style>`;
+    }
+
+    function aggiorna() {
+      const settings = {
+        testo: ui.testo.value.trim() || 'Testo sottopancia',
+        bg: ui.bg.value,
+        fg: ui.fg.value,
+        size: Number(ui.size.value) || 52,
+        speed: Number(ui.speed.value) || 14,
+        weight: ui.weight.value
+      };
+
+      ui.ticker.style.background = settings.bg;
+      ui.ticker.style.color = settings.fg;
+      ui.ticker.style.height = `${settings.size}px`;
+      ui.track.style.animationDuration = `${settings.speed}s`;
+      ui.track.style.fontWeight = settings.weight;
+      ui.track.style.lineHeight = `${settings.size}px`;
+      ui.text.textContent = settings.testo;
+      ui.textClone.textContent = settings.testo;
+      ui.output.textContent = generaCodice(settings);
+    }
+
+    ui.genera.addEventListener('click', aggiorna);
+    aggiorna();
+  </script>
+</body>
+</html>
