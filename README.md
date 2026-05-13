@@ -112,3 +112,7 @@ COVID-19/
 ## Licenza
 
 [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.it) - [Visualizza licenza](https://github.com/pcm-dpc/COVID-19/blob/master/LICENSE)
+
+## Strumenti utili
+
+- [Generatore sottopancia scorrevole HTML](strumenti/sottopancia/index.html)
